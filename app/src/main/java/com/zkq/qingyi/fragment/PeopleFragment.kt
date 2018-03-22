@@ -45,11 +45,21 @@ class PeopleFragment : Fragment() {
             }
         })
 
-        pe_userRadioGroupToo.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener(){
-            radioGroup, i ->
+        pe_userRadioGroupToo.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener() { radioGroup, i ->
             pe_userRadioGroup.clearCheck()
-            when(i){
+            when (i) {
+            //民营企业
+                R.id.pe_userMinbut -> {
 
+                }
+            //团体
+                R.id.pe_userTuanbut -> {
+
+                }
+            //其他
+                R.id.pe_userQibut -> {
+
+                }
             }
         })
     }
