@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'org.greenrobot.greendao' // 配置数据库
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -19,6 +20,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //greendao配置
+    greendao {
+        schemaVersion 1  //版本
+//        daoPackage 'com.zkq.qingyi.dp' // 一般为app包名+生成文件的文件夹名
+//        targetGenDir 'src/main/java' //生成文件路径
+    }
 }
 
 dependencies {
@@ -30,4 +37,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     //支持kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    //依赖数据库
+    compile 'org.greenrobot:greendao:3.2.2' // add library
 }
