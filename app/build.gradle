@@ -6,6 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'org.greenrobot.greendao' // 配置数据库
 android {
     compileSdkVersion 26
+
     defaultConfig {
         applicationId "com.zkq.qingyi"
         minSdkVersion 15
