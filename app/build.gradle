@@ -43,4 +43,5 @@ dependencies {
 
     //依赖数据库
     compile 'org.greenrobot:greendao:3.2.2' // add library
+    compile 'com.github.jdsjlzx:LRecyclerView:1.5.0'
 }
