@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zkq.qingyi">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <meta-data
+        android:name="OCR_APP_KEY"
+        android:value="10123456" />
+    <meta-data
+        android:name="OCR_SECRET_ID"
+        android:value="AKIDBF7nJd2rjOuEOQm6f3ECyYw88xd8mpws" />
+    <meta-data
+        android:name="OCR_SECRET_KEY"
+        android:value="sY3MTPDrJagbL3ZwCMMBpKfsGWbXIrFQ" />
 
     <application
         android:allowBackup="true"
